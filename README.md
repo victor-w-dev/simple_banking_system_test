@@ -7,6 +7,7 @@
 [1. Features](#Features)<br>
 [2. File Overview](#File-Overview)<br>
 [3. Getting Started](#Getting-Started)<br>
+[4. CSV Handling Techniques](#CSV-Handling-Techniques)<br>
 
 ## Features
 - Users can create a new bank account with a name and starting balance
@@ -70,7 +71,7 @@
    ```
    The script will output test results and clean up generated files.
 
-## Data and CSV Handling Techniques
+## CSV Handling Techniques
 This project uses CSV files for data persistence and retrieval in the banking system.
 
 ### Key Techniques
