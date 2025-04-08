@@ -8,6 +8,7 @@
 [2. File Overview](#File-Overview)<br>
 [3. Getting Started](#Getting-Started)<br>
 [4. CSV Handling Techniques](#CSV-Handling-Techniques)<br>
+[5. CSV system file description](#CSV-system-file-description)<br>
 
 ## Features
 - Users can create a new bank account with a name and starting balance
@@ -89,4 +90,31 @@ This project uses CSV files for data persistence and retrieval in the banking sy
 ### Benefits
 - Quick access to last rows in large files.  
 - No external dependencies.
-   
+
+## CSV system file description
+- [CSV system file reference link](https://github.com/victor-w-dev/simple_banking_system_test/tree/main/program_run_sample)
+
+- **{account_id}_transactions.csv**: Each account has a separate transactions CSV file.
+  These files contain records of all transactions for the respective account.
+- **System CSVs**:
+  - [**`system_accounts.csv`**](https://github.com/victor-w-dev/simple_banking_system_test/blob/main/program_run_sample/system_accounts.csv): Contains information about all accounts created in the banking system, including:
+    - account_id: Unique identifier for the account.
+    - user_name: Name of the account holder.
+    - account_created_time: Timestamp of when the account was created.
+  - [**`system_transactions.csv`**](https://github.com/victor-w-dev/simple_banking_system_test/blob/main/program_run_sample/system_transactions.csv):Contains records of all transactions across all accounts in the system, including:
+    - transaction_id: Unique identifier for the transaction.
+    - timestamp_start: Timestamp when the transaction started.
+    - account_id: Unique identifier for the account involved in the transaction.
+    - user_name: Name of the account holder.
+    - type: Type of transaction (e.g., create account, deposit, withdraw, transfer).
+    - amount: Amount of money involved in the transaction.
+    - currency: Currency used in the transaction.
+    - balance: Account balance after the transaction.
+    - target_id: Target account ID for transfers (if applicable).
+    - target_user_name: Name of the target account holder (if applicable).
+    - reference_number: Reference number for the transaction, same reference number for a pair of 'transfer_to' and 'receive_from' transaction
+    - timestamp_end: Timestamp when the transaction ended.
+    - status: Status of the transaction (e.g., completed, failed).
+    - remarks: Additional remarks or notes about the transaction. (always null for simulation)
+    
+    Note: `target_id` and `target_user_name` are only included if the transaction type is 'transfer'.
