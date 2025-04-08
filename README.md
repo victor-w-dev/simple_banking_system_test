@@ -69,4 +69,23 @@
    python unittest_banking_system.py
    ```
    The script will output test results and clean up generated files.
+
+## Data and CSV Handling Techniques
+This project uses CSV files for data persistence and retrieval in the banking system.
+
+### Key Techniques
+1. **CSV Persistence**  
+   - Stores data in `system_accounts.csv`, `system_transactions.csv`, and `{account_id}_transactions.csv`.  
+   - Uses consistent fields (e.g., `transaction_id`, `amount`) for parsing.
+
+2. **Byte-Level Last Row Extraction**  
+   - `CSVLastRowExtractor` in `system_reader.py` seeks to the end with `file.seek(0, 2)`, moves back to the last newline, and reads the final line.  
+   - Faster for large, simple CSVs (near O(1)), parsed with `csv.reader` for latest balances and IDs.
+
+3. **Transaction Logging**  
+   - Appends transactions with metadata (e.g., timestamps) in real-time, validated as "Completed" or "Failed".
+
+### Benefits
+- Quick access to last rows in large files.  
+- No external dependencies.
    
