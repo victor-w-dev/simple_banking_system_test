@@ -95,7 +95,10 @@ This project uses CSV files for data persistence and retrieval in the banking sy
 - [CSV system file reference link](https://github.com/victor-w-dev/simple_banking_system_test/tree/main/program_run_sample)
 
 - **{account_id}_transactions.csv**: Each account has a separate transactions CSV file.
-  These files contain records of all transactions for the respective account.
+  These files contain records of all transactions for the respective account,
+  e.g. [**`1_transactions.csv`**](https://github.com/victor-w-dev/simple_banking_system_test/blob/main/program_run_sample/1_transactions.csv)
+  [**`2_transactions.csv`**](https://github.com/victor-w-dev/simple_banking_system_test/blob/main/program_run_sample/2_transactions.csv)
+  [**`3_transactions.csv`**](https://github.com/victor-w-dev/simple_banking_system_test/blob/main/program_run_sample/3_transactions.csv)
 - **System CSVs**:
   - [**`system_accounts.csv`**](https://github.com/victor-w-dev/simple_banking_system_test/blob/main/program_run_sample/system_accounts.csv): Contains information about all accounts created in the banking system, including:
     - account_id: Unique identifier for the account.
