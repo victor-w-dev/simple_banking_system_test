@@ -1,6 +1,0 @@
-transaction_id,timestamp_start,account_id,user_name,type,amount,currency,balance,target_id,target_user_name,reference_number,timestamp_end,status,remarks
-1,2024-07-25T22:06:16.753872,1,Alice,create_account,1000.0,HKD,1000.0,,,1,2024-07-25T22:06:16.862237,Completed,
-3,2024-07-25T22:06:16.968845,1,Alice,deposit,500,HKD,1500.0,,,3,2024-07-25T22:06:17.079032,Completed,
-6,2024-07-25T22:06:17.288365,1,Alice,transfer_to,300,HKD,1200.0,2,Bob,6,2024-07-25T22:06:17.393789,Completed,
-10,2024-07-25T22:06:17.739466,1,Alice,withdraw,1000,HKD,200.0,,,8,2024-07-25T22:06:17.844237,Completed,
-12,2024-07-25T22:06:17.959287,1,Alice,receive_from,50,HKD,250.0,3,Victor,9,2024-07-25T22:06:18.063760,Completed,
