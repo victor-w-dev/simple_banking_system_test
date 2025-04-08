@@ -4,6 +4,9 @@
 - This repository contains a simple banking system implemented in Python. It includes 3 python scripts, namely a core banking system script, a utility for reading CSV files, and a unit test suite to validate the functionality. The project simulates basic banking operations such as account creation, deposits, withdrawals, transfers, and transaction logging, with data persistence using CSV files.
 
 ## Table of contents
+[1. Features](#Features)<br>
+[2. File Overview](#File-Overview)<br>
+[3. Getting Started](#Getting-Started)<br>
 
 ## Features
 - Users can create a new bank account with a name and starting balance
