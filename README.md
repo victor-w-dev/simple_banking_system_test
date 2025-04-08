@@ -39,5 +39,31 @@
     - Tests account creation, deposits, withdrawals, transfers, and overdraft prevention.  
     - Automatically cleans up generated CSV files after each test run.  
     - Provides feedback on test success or failure.
-      
 
+## Getting Started
+
+### Prerequisites
+- Python 3.x installed on your system.
+
+### Installation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/simple_banking_system_test.git
+   cd simple_banking_system_test
+2. No additional dependencies are required—all scripts use Python's standard library.
+
+### Usage
+
+1. **Run the Banking System**  
+   Execute `banking_system.py` to see the example usage:  
+   ```bash
+   python banking_system.py
+   ```
+   This will create sample accounts, perform transactions, and display the system's state.
+2. **Run Unit Tests**
+   Test the banking system functionality:
+   ```bash
+   python unittest_banking_system.py
+   ```
+   The script will output test results and clean up generated files.
+   
