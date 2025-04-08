@@ -81,9 +81,9 @@ This project uses CSV files for data persistence and retrieval in the banking sy
    - Uses consistent fields (e.g., `transaction_id`, `amount`) for parsing.
 
 2. **Byte-Level Last Row Extraction**  
-   - `CSVLastRowExtractor` in `system_reader.py` seeks to the end with `file.seek(0, 2)`, moves back to the last newline, and reads the final line.  
-   - Faster for large, simple CSVs (near O(1)), parsed with `csv.reader` for latest balances and IDs.
-
+   - `CSVLastRowExtractor` in `system_reader.py` seeks to the end with `file.seek(0, 2)`, moves back to the last newline, and reads the final line. 
+   - Faster for large, simple CSVs (near O(1)), parsed with `csv.reader` for latest balance and transaction ID.
+     
 3. **Transaction Logging**  
    - Appends transactions with metadata (e.g., timestamps) in real-time, validated as "Completed" or "Failed".
 
