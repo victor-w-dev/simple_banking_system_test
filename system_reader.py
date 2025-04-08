@@ -1,7 +1,7 @@
 import csv
 from io import StringIO
 import time
-from collections import deque
+#from collections import deque
 
 def timer(func):
     def wrapper(*args, **kwargs):
