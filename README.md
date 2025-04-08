@@ -32,7 +32,7 @@
     - Example usage is included in the `if __name__ == "__main__":` block.
 
 2.[**`system_reader.py`**](https://github.com/victor-w-dev/simple_banking_system/blob/main/system_reader.py)
-  - **Purpose**: A utility script containing the `CSVLastRowExtractor` class, which efficiently extracts the last row of data from a CSV file using a deque. This is used by `banking_system.py` to load the latest account balances and transaction IDs.  
+  - **Purpose**: A utility script containing the `CSVLastRowExtractor` class, which efficiently extracts the last row of data from a CSV file using reverse byte seek method. This is used by `banking_system.py` to load the latest account balances and transaction IDs.  
   - **Key Features**:  
     - Reads specific columns from the last row of a CSV file.  
     - Handles errors such as missing files or invalid columns.  
